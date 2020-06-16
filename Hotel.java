@@ -1,11 +1,12 @@
 
-
 public class Hotel implements Comparable<Hotel> {
-	private String roomN;
-	private String roomNumber; // unique Key 
-	private String occupants; // secondary Key 
-	private String roomType; 
+	private String roomNumber; // unique Key
+	private String occupants; // secondary Key
+	private String roomType;
 	private String stayDuration;
+	private int numOfGuests;
+	private int floor;
+	private double price;
 
 	/**
 	 * Constructor for the Hotel class
@@ -14,13 +15,20 @@ public class Hotel implements Comparable<Hotel> {
 	 * @param occupants    the name of the occupant
 	 * @param roomType     the room type
 	 * @param stayDuration the staying duration of the occupant
-	 *                
+	 * @param numOfGuests  the number of guests
+	 * @param floor        the floor number of the room
+	 * @param price        the price of the room
+	 * 
 	 */
-	public Hotel(String roomNumber, String occupants, String roomType, String stayDuration) {
+	public Hotel(String roomNumber, String occupants, String roomType, String stayDuration, int numOfGuests, int floor,
+			double price) {
 		this.roomNumber = roomNumber;
-		this.occupants = occupants;
+		this.occupants = occupants; //guest name
 		this.roomType = roomType;
 		this.stayDuration = stayDuration;
+		this.numOfGuests = numOfGuests;
+		this.floor = floor;
+		this.price = price;
 	}
 
 	/**
@@ -33,7 +41,7 @@ public class Hotel implements Comparable<Hotel> {
 	}
 
 	/**
-	 * Accesses the occupant of the room 
+	 * Accesses the occupant of the room
 	 * 
 	 * @return the occupant
 	 */
@@ -57,6 +65,33 @@ public class Hotel implements Comparable<Hotel> {
 	 */
 	public String getStayDuration() {
 		return stayDuration;
+	}
+
+	/**
+	 * Access the number of guests
+	 * 
+	 * @return number of guests
+	 */
+	public int getNumOfGuests() {
+		return numOfGuests;
+	}
+
+	/**
+	 * Gets the floor number
+	 * 
+	 * @return floor number
+	 */
+	public int getFloor() {
+		return floor;
+	}
+
+	/**
+	 * Sets the price
+	 * 
+	 * @return price
+	 */
+	public double getPrice() {
+		return price;
 	}
 
 	/**
@@ -96,14 +131,41 @@ public class Hotel implements Comparable<Hotel> {
 	}
 
 	/**
-	 * Creates a String of the Hotel information the following format: Room Number:
-	 * <roomNumber> Occupant: <occupants> Room Type: <roomType> Duration of staying: $<stayDuration>
+	 * Sets the number of guests
+	 * 
+	 * @param number of guests
+	 */
+	public void setNumOfGuests(int numOfGuests) {
+		this.numOfGuests = numOfGuests;
+	}
 
+	/**
+	 * Sets the floor number
+	 * 
+	 * @param floor number
+	 */
+	public void setFloor(int floor) {
+		this.floor = floor;
+	}
+
+	/**
+	 * Sets the price
+	 * 
+	 * @param price
+	 */
+	public void setPrice(double price) {
+		this.price = price;
+	}
+
+	/**
+	 * Creates a String of the Hotel information the following format: Room Number:
+	 * <roomNumber> Occupant: <occupants> Room Type: <roomType> Duration of staying:
+	 * $<stayDuration>
 	 */
 	@Override
 	public String toString() {
-		String result = "Room Number: " + roomNumber + "\nOccupant: " + occupants + "\nRoom Type: " + roomType + "\nDuration of staying: "
-				+ stayDuration + " Days";
+		String result = "Room Number: " + roomNumber + "\nOccupant: " + occupants + "\nRoom Type: " + roomType
+				+ "\nDuration of Stay: " + stayDuration + " Days";
 		return result;
 	}
 
@@ -122,21 +184,23 @@ public class Hotel implements Comparable<Hotel> {
 			return false;
 		} else {
 			Hotel otherHotel = (Hotel) o;
-
 			return this.roomNumber.equals(otherHotel.roomNumber) && this.occupants.equals(otherHotel.occupants);
 		}
 
 	}
 
 	/**
-	 * Compares two Hotel objects to determine ordering Returns 0 if the two items
-	 * are equal Return -1 if this Hotel's title comes alphabetically before the
-	 * other Hotel's title. Returns 1 if the other Hotel's title comes
-	 * alphabetically before this Hotel's title If the two Hotel's titles are the
-	 * same, will differentiate by director's name (alphabetical comparison)
+	 * Compares two when room number objects to determine ordering Returns 0 if the
+	 * two items are equal 
+	 * Return -1 if this Hotel's room number comes before the
+	 * other Hotel's room number. 
+	 * Returns 1 if the other Hotel's room number comes before
+	 * this Hotel's room number 
+	 * If the two Hotel's room numbers are the same, will
+	 * differentiate by occupants (alphabetical comparison)
 	 * 
 	 * @param the other Hotel object to compare to this
-	 * @return 0 (same Hotel), -1 (this Hotel ordered first) or 1 (the other Hotel
+	 * @return 0 (same room), -1 (this room ordered first) or 1 (the other room
 	 *         ordered first)
 	 */
 	@Override
@@ -144,11 +208,11 @@ public class Hotel implements Comparable<Hotel> {
 		if (this.equals(otherRoom)) {
 			return 0;
 		} else if (!(this.roomNumber.equals(otherRoom.roomNumber))) {
-			return this.roomNumber.compareTo(otherRoom.roomNumber); // when titles are different
+			return this.roomNumber.compareTo(otherRoom.roomNumber); // when room numbers are different
 		} else {
-			return this.occupants.compareTo(otherRoom.occupants);
+			return this.occupants.compareTo(otherRoom.occupants); // guest name is secondary key
 		}
-		
+
 	}
 
 	/**
@@ -166,6 +230,8 @@ public class Hotel implements Comparable<Hotel> {
 		}
 		return sum;
 	}
+
+}
 	
 	/**@Override
 	public int hashCode() {
@@ -177,5 +243,3 @@ public class Hotel implements Comparable<Hotel> {
 		return sum;
 	}
 	*/
-
-}
