@@ -1,0 +1,319 @@
+25
+Charles Young
+5/05/20 - 5/10/20
+Suite
+1
+1
+800
+
+204
+Tae-yang Lee
+5/01/20 - 5/10/20
+Queen
+2
+2
+500.5
+
+305
+Richie Knox
+5/20/20 - 5/30/20
+King
+2
+1
+256
+
+171
+Raees Khan
+Double
+5/15/20 - 5/19/20
+2
+1
+800
+
+9
+Simon Yang
+Standard
+5/20/20 - 5/21/20
+1
+2
+400
+
+65
+Keanu Thompson
+Suite
+5/10/20 - 5/13/20
+4
+4
+500
+
+60
+Harrison Barrow
+Queen
+5/02/20 - 5/10/20
+2
+3
+230
+
+420
+Chanelle Cervantes
+Double
+5/05/20 - 5/10/20
+2
+3
+112
+
+401
+Andrew Barnes
+Standard
+5/01/20 - 5/12/20
+1
+4
+345.6
+
+91
+Whitney Proctor
+Suite
+5/12/20 - 5/18/20
+1
+1
+112.3
+
+11
+Devon Carroll
+Double
+5/11/20 - 5/19/20
+2
+3
+345.6
+
+191
+Ayesha Syed
+Queen
+5/12/20 - 5/20/20
+1
+4
+345.3
+
+20
+Vladimir Roche
+Suite
+5/19/20 - 5/22/20
+4
+2
+234.5
+
+79
+Leona Mitchell
+Standard
+5/13/20 - 5/20/20
+1
+3
+236.7
+
+320
+Kharis Wolf
+Standard
+5/19/20 - 5/20/20
+1
+4
+100.5
+
+230
+Lydia Blackwell
+Double
+5/12/20 - 5/20/20
+2
+2
+234.5
+
+389
+Xinfang Lei
+Queen
+5/02/20 - 5/18/20
+2
+3
+432.5
+
+340
+Hardeep Singh
+King
+5/10/20 - 5/18/20
+2
+1
+123.4
+
+201
+Thanh Nguyen
+Double
+5/01/20 - 5/03/20
+2
+3
+234.5
+
+456
+Lily Mai
+Double
+5/11/20 - 5/13/20
+1
+2
+321.1
+
+33
+John Doe
+Standard
+5/11/20 - 5/13/20
+1
+2
+312.4
+
+65
+Owen Swan
+5/19/20 - 5/23/20
+Double
+2
+4
+231.4
+
+372
+Warren Holden
+5/11/20 - 5/13/20
+King
+1
+1
+123.5
+
+401
+Harris Davey
+5/01/20 - 5/03/20
+Queen
+2
+2
+165.3
+
+300
+Yousuf Furqan
+5/01/20 - 5/04/20
+Standard
+1
+1
+100
+
+200
+Charlie Hunter
+5/01/20 - 5/05/20
+Double
+2
+3
+234.5
+
+299
+Grace Kaur
+5/01/20 - 5/08/20
+King
+2
+4
+456.7
+
+111
+Siana Viola
+5/01/20 - 5/13/20
+Standard
+1
+2
+324.5
+
+338
+Raul Garza
+5/11/20 - 5/23/20
+Queen
+2
+3
+234.5
+
+222
+Rafael Benson
+5/01/20 - 5/03/20
+King
+1
+4
+123.3
+
+88
+Guy Tyson
+5/01/20 - 5/02/20
+Standard
+1
+1
+100.2
+
+208
+Aiden Huff
+5/01/20 - 5/03/20
+King
+1
+2
+123.4
+
+123
+John Doe
+5/21/20 - 5/23/20
+King
+1
+3
+112.3
+
+144
+Jamie-Leigh Soto
+5/21/20 - 5/23/20
+Queen
+2
+3
+124.4
+
+40
+Adrien Farrow
+5/21/20 - 5/24/20
+Queen
+1
+3
+123.4
+
+42
+Chase Tapia
+5/21/20 - 5/30/20
+Standard
+1
+2
+234.5
+
+161
+Zhihao Wei
+5/11/20 - 5/23/20
+Double
+2
+1
+167.8
+
+23
+Gray Kim
+5/01/20 - 5/13/20
+Standard
+1
+3
+190.2
+
+190
+Amrit Hutton
+5/02/20 - 5/13/20
+Standard
+1
+1
+109.2
+
+417
+Martin Mahoney
+5/03/20 - 5/05/20
+Suite
+2
+1
+110.2
