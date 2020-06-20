@@ -4,7 +4,6 @@ public class Hotel implements Comparable<Hotel> {
 	private String roomType;
 	private String stayDuration;
 	private int numOfGuests;
-	private int floor;
 	private int price;
 
 	/**
