@@ -15,7 +15,7 @@ public class Database {
 		String res="";
 		String a = "";
 		String roomType;
-		String stayDuration;
+		int stayDuration;
 		int numGuest;
 		int suiteav=5, standardav=9, queenav=7, kingav=8, doubleav = 11;
 		int floor;
@@ -31,8 +31,8 @@ public class Database {
 		while(input1.hasNextLine()) {
 			roomNumber = input1.nextLine();
 			occupants = input1.nextLine();
-			stayDuration = input1.nextLine();
 			roomType = input1.nextLine();
+			stayDuration = input1.nextInt();
 			numGuest = input1.nextInt();
 			price = input1.nextInt();
 			if (input1.hasNextLine()) {
@@ -68,7 +68,7 @@ public class Database {
 						System.out.print("What is the name for the reservation?: ");
 						occupants = input.nextLine();
 						System.out.print("How many nights will you be staying?: ");
-						stayDuration=input.nextLine();
+						stayDuration=input.nextInt();
 						System.out.print("How many people will be staying in this room?: ");
 						numGuest = input.nextInt();
 						input.nextLine();
@@ -88,7 +88,7 @@ public class Database {
 					System.out.print("What is the name for the reservation?: ");
 					occupants = input.nextLine();
 					System.out.print("How many nights will you be staying?: ");
-					stayDuration=input.nextLine();
+					stayDuration=input.nextInt();
 					System.out.print("How many people will be staying in this room?: ");
 					numGuest = input.nextInt();
 					input.nextLine();
@@ -109,7 +109,7 @@ public class Database {
 					System.out.print("What is the name for the reservation?: ");
 					occupants = input.nextLine();
 					System.out.print("How many nights will you be staying?: ");
-					stayDuration=input.nextLine();
+					stayDuration=input.nextInt();
 					System.out.print("How many people will be staying in this room?: ");
 					numGuest = input.nextInt();
 					input.nextLine();
@@ -130,7 +130,7 @@ public class Database {
 					System.out.print("What is the name for the reservation?: ");
 					occupants = input.nextLine();
 					System.out.print("How many nights will you be staying?: ");
-					stayDuration=input.nextLine();
+					stayDuration=input.nextInt();
 					System.out.print("How many people will be staying in this room?: ");
 					numGuest = input.nextInt();
 					input.nextLine();
@@ -151,7 +151,7 @@ public class Database {
 					System.out.print("What is the name for the reservation?: ");
 					occupants = input.nextLine();
 					System.out.print("How many nights will you be staying?: ");
-					stayDuration=input.nextLine();
+					stayDuration=input.nextInt();
 					System.out.print("How many people will be staying in this room?: ");
 					numGuest = input.nextInt();
 					input.nextLine();
