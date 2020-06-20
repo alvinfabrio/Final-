@@ -2,20 +2,20 @@ import java.util.Scanner;
 import java.io.*;
 
 
-public class Database {
+public class HotelDatabase {
 	private final int Num_Room = 40;
 	Hash<Hotel>ht = new Hash<>(Num_Room*2);
 	BST<Hotel> bst = new BST<>();
 	
 	public static void main(String[]args) {
-		Database d = new Database();
+		HotelDatabase d = new HotelDatabase();
 		Hotel h = null;
 		String roomNumber;
 		String occupants;
 		String res="";
 		String a = "";
 		String roomType;
-		int stayDuration;
+		String stayDuration;
 		int numGuest;
 		int suiteav=5, standardav=9, queenav=7, kingav=8, doubleav = 11;
 		int floor;
@@ -31,7 +31,7 @@ public class Database {
 		while(input1.hasNextLine()) {
 			roomNumber = input1.nextLine();
 			occupants = input1.nextLine();
-			stayDuration = input1.nextInt();
+			stayDuration = input1.nextLine();
 			roomType = input1.nextLine();
 			numGuest = input1.nextInt();
 			floor = input1.nextInt();
@@ -70,7 +70,7 @@ public class Database {
 						System.out.print("What is the name for the reservation?: ");
 						occupants = input.nextLine();
 						System.out.print("How long is the stay?: ");
-						stayDuration = input.nextInt();
+						stayDuration = input.nextLine();
 						
 					}		
 				}else if(res.equalsIgnoreCase("Standard")) {
@@ -114,7 +114,7 @@ public class Database {
 					System.out.print("Room number you are looking for (1 - 80): ");
 					roomNumber = input.nextLine();
 					
-					Hotel temp = new Hotel(roomNumber, null, null, 0, 0, 0, 0);
+					Hotel temp = new Hotel(roomNumber, null, null, null, 0, 0, 0);
 					int inTable = d.ht.search(temp);
 					if (inTable != -1) {
 						System.out.println("This room available!");
@@ -131,7 +131,7 @@ public class Database {
 					System.out.print("Name of the occupant: ");
 					occupants = input.nextLine();
 					
-					Hotel temp = new Hotel(null, null, occupants, 0, 0, 0, 0);
+					Hotel temp = new Hotel(null, null, occupants, null, 0, 0, 0);
 					int inTable = d.ht.search(temp);
 					
 					if (inTable != -1) {
