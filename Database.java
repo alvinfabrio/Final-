@@ -19,7 +19,7 @@ public class Database {
 		int numGuest;
 		int suiteav=5, standardav=9, queenav=7, kingav=8, doubleav = 11;
 		int floor;
-		double price;
+		int price;
 		File file = new File("hotel.txt");
 		Scanner input1 = null;
 		try {
@@ -34,7 +34,7 @@ public class Database {
 			roomType = input1.nextLine();
 			numGuest = input1.nextInt();
 			floor = input1.nextInt();
-			price = input1.nextDouble();
+			price = input1.nextInt();
 			
 			if (input1.hasNextLine()) {
 				input1.nextLine();
@@ -56,8 +56,25 @@ public class Database {
 			System.out.print("Enter your choice: ");
 			res = input.nextLine();
 			if(res.equalsIgnoreCase("A")) {
-				System.out.println("Here are the types of rooms we have: \n1.Double\n2.");
+				System.out.println("Here are the types of rooms we have: \n1.Double($50 per night)\n2.Standard($30 per night)\n3.Queen($90 per night)\n4.King($120 per night)\n5.Suite($250 per night)");
 				System.out.print("Please enter what type of room you want: ");
+				res=input.nextLine();
+				if(res.equalsIgnoreCase("Double")) {
+					if(doubleav==0) {
+						System.out.print("Sorry there are no more Double rooms available!");
+					}else {
+						System.out.println("There are "+doubleav+" double rooms available");
+						System.out.print("Would you like to make a reservation?:");
+					}		
+				}else if(res.equalsIgnoreCase("Standard")) {
+					
+				}else if(res.equalsIgnoreCase("Queen")) {
+					
+				}else if(res.equalsIgnoreCase("King")) {
+					
+				}else if(res.equalsIgnoreCase("Suite")) {
+					
+				}
 				
 				
 				
