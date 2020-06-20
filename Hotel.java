@@ -2,7 +2,7 @@ public class Hotel implements Comparable<Hotel> {
 	private String roomNumber; // unique Key
 	private String occupants; // secondary Key
 	private String roomType;
-	private int stayDuration;
+	private String stayDuration;
 	private int numOfGuests;
 	private int floor;
 	private int price;
@@ -19,7 +19,7 @@ public class Hotel implements Comparable<Hotel> {
 	 * @param price        the price of the room
 	 * 
 	 */
-	public Hotel(String roomNumber, String occupants, String roomType, int stayDuration, int numOfGuests, int floor,
+	public Hotel(String roomNumber, String occupants, String roomType, String stayDuration, int numOfGuests, int floor,
 			int price) {
 		this.roomNumber = roomNumber;
 		this.occupants = occupants; //guest name
