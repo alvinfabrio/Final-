@@ -2,7 +2,7 @@ import java.util.Scanner;
 import java.io.*;
 
 public class Database {
-	private final int Num_Room = 0;
+	private final int Num_Room = 40;
 	Hash<Hotel>ht = new Hash<>(Num_Room*2);
 	BST<Hotel> bst = new BST<>();
 	
@@ -11,7 +11,8 @@ public class Database {
 		Hotel h = null;
 		String roomNumber;
 		String occupants;
-		String res;
+		String res="";
+		String a = "";
 		String roomType;
 		String stayDuration;
 		int numGuest;
@@ -42,8 +43,21 @@ public class Database {
 			d.ht.insert(h);
 			d.bst.insert(h);
 		}
-		
 		input1.close();
+		Scanner input = new Scanner(System.in);
+		System.out.println("Welcome to ADT Hotel");
+		while(!(res.equalsIgnoreCase("q"))) {
+			System.out.println("Please select from one of the following options: \n");
+
+			System.out.println(
+					"A. Make a Reservation\nD. Display all Rooms\nR. Check out\nS. Search for a Room\nX. Exit\n");
+			System.out.print("Enter your choice: ");
+			res = input.nextLine();
+			if(res.equalsIgnoreCase("A")) {
+				System.out.print("Please enter what type of room you want: ");
+				
+			}
+		}
 		
 		
 	}
