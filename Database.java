@@ -1,6 +1,7 @@
 import java.util.Scanner;
 import java.io.*;
 
+
 public class Database {
 	private final int Num_Room = 40;
 	Hash<Hotel>ht = new Hash<>(Num_Room*2);
@@ -16,6 +17,7 @@ public class Database {
 		String roomType;
 		String stayDuration;
 		int numGuest;
+		int suiteav=5, standardav=9, queenav=7, kingav=8, doubleav = 11;
 		int floor;
 		double price;
 		File file = new File("hotel.txt");
@@ -46,7 +48,7 @@ public class Database {
 		input1.close();
 		Scanner input = new Scanner(System.in);
 		System.out.println("Welcome to ADT Hotel");
-		while(!(res.equalsIgnoreCase("q"))) {
+		while(!(res.equalsIgnoreCase("X"))) {
 			System.out.println("Please select from one of the following options: \n");
 
 			System.out.println(
@@ -54,9 +56,35 @@ public class Database {
 			System.out.print("Enter your choice: ");
 			res = input.nextLine();
 			if(res.equalsIgnoreCase("A")) {
+				System.out.println("Here are the types of rooms we have: \n1.Double\n2.");
 				System.out.print("Please enter what type of room you want: ");
 				
+				
+				
 			}
+			else if(res.equalsIgnoreCase("D")) {
+				
+			}
+			else if(res.equalsIgnoreCase("R")) {
+				
+			}
+			else if(res.equalsIgnoreCase("S")) {
+				
+			}
+			else if(res.equalsIgnoreCase("X")) {
+				break;
+			}
+		}
+		System.out.print("Would you like all room information to be put into a file?(Y/N)");
+		res = input.nextLine();
+		if(res.equalsIgnoreCase("y")) {
+			System.out.print("Please enter the name of the file you want to create: ");
+			String filename = input.nextLine();
+			File fileo = new File(filename);
+			
+		}
+		else {
+			System.out.print("GoodBye!");
 		}
 		
 		
