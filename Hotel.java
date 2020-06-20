@@ -19,14 +19,13 @@ public class Hotel implements Comparable<Hotel> {
 	 * @param price        the price of the room
 	 * 
 	 */
-	public Hotel(String roomNumber, String occupants, String roomType, String stayDuration, int numOfGuests, int floor,
+	public Hotel(String roomNumber, String occupants, String roomType, String stayDuration, int numOfGuests,
 			int price) {
 		this.roomNumber = roomNumber;
 		this.occupants = occupants; //guest name
 		this.roomType = roomType;
 		this.stayDuration = stayDuration;
 		this.numOfGuests = numOfGuests;
-		this.floor = floor;
 		this.price = price;
 	}
 
@@ -62,7 +61,7 @@ public class Hotel implements Comparable<Hotel> {
 	 * 
 	 * @return the staying duration
 	 */
-	public int getStayDuration() {
+	public String getStayDuration() {
 		return stayDuration;
 	}
 
@@ -73,15 +72,6 @@ public class Hotel implements Comparable<Hotel> {
 	 */
 	public int getNumOfGuests() {
 		return numOfGuests;
-	}
-
-	/**
-	 * Gets the floor number
-	 * 
-	 * @return floor number
-	 */
-	public int getFloor() {
-		return floor;
 	}
 
 	/**
@@ -125,7 +115,7 @@ public class Hotel implements Comparable<Hotel> {
 	 * 
 	 * @param stayDuration the Occupant's staying duration
 	 */
-	public void setStayDuration(int stayDuration) {
+	public void setStayDuration(String stayDuration) {
 		this.stayDuration = stayDuration;
 	}
 
@@ -136,15 +126,6 @@ public class Hotel implements Comparable<Hotel> {
 	 */
 	public void setNumOfGuests(int numOfGuests) {
 		this.numOfGuests = numOfGuests;
-	}
-
-	/**
-	 * Sets the floor number
-	 * 
-	 * @param floor number
-	 */
-	public void setFloor(int floor) {
-		this.floor = floor;
 	}
 
 	/**
@@ -231,4 +212,3 @@ public class Hotel implements Comparable<Hotel> {
 	}
 
 }
-
