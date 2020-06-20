@@ -1,4 +1,4 @@
-25
+1
 Charles Young
 5/05/20 - 5/10/20
 Suite
@@ -6,7 +6,7 @@ Suite
 1
 800
 
-204
+3
 Tae-yang Lee
 5/01/20 - 5/10/20
 Queen
@@ -14,7 +14,7 @@ Queen
 2
 500.5
 
-305
+5
 Richie Knox
 5/20/20 - 5/30/20
 King
@@ -22,7 +22,7 @@ King
 1
 256
 
-171
+7
 Raees Khan
 Double
 5/15/20 - 5/19/20
@@ -38,7 +38,7 @@ Standard
 2
 400
 
-65
+10
 Keanu Thompson
 Suite
 5/10/20 - 5/13/20
@@ -46,7 +46,7 @@ Suite
 4
 500
 
-60
+12
 Harrison Barrow
 Queen
 5/02/20 - 5/10/20
@@ -54,7 +54,7 @@ Queen
 3
 230
 
-420
+14
 Chanelle Cervantes
 Double
 5/05/20 - 5/10/20
@@ -62,7 +62,7 @@ Double
 3
 112
 
-401
+16
 Andrew Barnes
 Standard
 5/01/20 - 5/12/20
@@ -70,7 +70,7 @@ Standard
 4
 345.6
 
-91
+18
 Whitney Proctor
 Suite
 5/12/20 - 5/18/20
@@ -78,7 +78,7 @@ Suite
 1
 112.3
 
-11
+20
 Devon Carroll
 Double
 5/11/20 - 5/19/20
@@ -86,7 +86,7 @@ Double
 3
 345.6
 
-191
+22
 Ayesha Syed
 Queen
 5/12/20 - 5/20/20
@@ -94,7 +94,7 @@ Queen
 4
 345.3
 
-20
+24
 Vladimir Roche
 Suite
 5/19/20 - 5/22/20
@@ -102,7 +102,7 @@ Suite
 2
 234.5
 
-79
+26
 Leona Mitchell
 Standard
 5/13/20 - 5/20/20
@@ -110,7 +110,7 @@ Standard
 3
 236.7
 
-320
+28
 Kharis Wolf
 Standard
 5/19/20 - 5/20/20
@@ -118,7 +118,7 @@ Standard
 4
 100.5
 
-230
+30
 Lydia Blackwell
 Double
 5/12/20 - 5/20/20
@@ -126,7 +126,7 @@ Double
 2
 234.5
 
-389
+32
 Xinfang Lei
 Queen
 5/02/20 - 5/18/20
@@ -134,7 +134,7 @@ Queen
 3
 432.5
 
-340
+34
 Hardeep Singh
 King
 5/10/20 - 5/18/20
@@ -142,7 +142,7 @@ King
 1
 123.4
 
-201
+36
 Thanh Nguyen
 Double
 5/01/20 - 5/03/20
@@ -150,7 +150,7 @@ Double
 3
 234.5
 
-456
+38
 Lily Mai
 Double
 5/11/20 - 5/13/20
@@ -158,7 +158,7 @@ Double
 2
 321.1
 
-33
+40
 John Doe
 Standard
 5/11/20 - 5/13/20
@@ -166,7 +166,7 @@ Standard
 2
 312.4
 
-65
+39
 Owen Swan
 5/19/20 - 5/23/20
 Double
@@ -174,7 +174,7 @@ Double
 4
 231.4
 
-372
+37
 Warren Holden
 5/11/20 - 5/13/20
 King
@@ -182,7 +182,7 @@ King
 1
 123.5
 
-401
+35
 Harris Davey
 5/01/20 - 5/03/20
 Queen
@@ -190,7 +190,7 @@ Queen
 2
 165.3
 
-300
+33
 Yousuf Furqan
 5/01/20 - 5/04/20
 Standard
@@ -198,7 +198,7 @@ Standard
 1
 100
 
-200
+31
 Charlie Hunter
 5/01/20 - 5/05/20
 Double
@@ -206,7 +206,7 @@ Double
 3
 234.5
 
-299
+29
 Grace Kaur
 5/01/20 - 5/08/20
 King
@@ -214,7 +214,7 @@ King
 4
 456.7
 
-111
+27
 Siana Viola
 5/01/20 - 5/13/20
 Standard
@@ -222,7 +222,7 @@ Standard
 2
 324.5
 
-338
+25
 Raul Garza
 5/11/20 - 5/23/20
 Queen
@@ -230,7 +230,7 @@ Queen
 3
 234.5
 
-222
+23
 Rafael Benson
 5/01/20 - 5/03/20
 King
@@ -238,7 +238,7 @@ King
 4
 123.3
 
-88
+21
 Guy Tyson
 5/01/20 - 5/02/20
 Standard
@@ -246,7 +246,7 @@ Standard
 1
 100.2
 
-208
+19
 Aiden Huff
 5/01/20 - 5/03/20
 King
@@ -254,7 +254,7 @@ King
 2
 123.4
 
-123
+17
 John Doe
 5/21/20 - 5/23/20
 King
@@ -262,7 +262,7 @@ King
 3
 112.3
 
-144
+15
 Jamie-Leigh Soto
 5/21/20 - 5/23/20
 Queen
@@ -270,7 +270,7 @@ Queen
 3
 124.4
 
-40
+13
 Adrien Farrow
 5/21/20 - 5/24/20
 Queen
@@ -278,7 +278,7 @@ Queen
 3
 123.4
 
-42
+11
 Chase Tapia
 5/21/20 - 5/30/20
 Standard
@@ -286,7 +286,7 @@ Standard
 2
 234.5
 
-161
+8
 Zhihao Wei
 5/11/20 - 5/23/20
 Double
@@ -294,7 +294,7 @@ Double
 1
 167.8
 
-23
+6
 Gray Kim
 5/01/20 - 5/13/20
 Standard
@@ -302,7 +302,7 @@ Standard
 3
 190.2
 
-190
+4
 Amrit Hutton
 5/02/20 - 5/13/20
 Standard
@@ -310,7 +310,7 @@ Standard
 1
 109.2
 
-417
+2
 Martin Mahoney
 5/03/20 - 5/05/20
 Suite
