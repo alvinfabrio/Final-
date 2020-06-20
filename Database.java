@@ -15,11 +15,12 @@ public class Database {
 		String res="";
 		String a = "";
 		String roomType;
-		String stayDuration;
+		int stayDuration;
 		int numGuest;
 		int suiteav=5, standardav=9, queenav=7, kingav=8, doubleav = 11;
 		int floor;
-		int price;
+		int price, suiteprice=250,standardprice=30,doubleprice=50,queenprice=90,kingprice=120;
+		int roomnumincrement = 40;
 		File file = new File("hotel.txt");
 		Scanner input1 = null;
 		try {
@@ -30,7 +31,7 @@ public class Database {
 		while(input1.hasNextLine()) {
 			roomNumber = input1.nextLine();
 			occupants = input1.nextLine();
-			stayDuration = input1.nextLine();
+			stayDuration = input1.nextInt();
 			roomType = input1.nextLine();
 			numGuest = input1.nextInt();
 			floor = input1.nextInt();
@@ -41,7 +42,7 @@ public class Database {
 				input1.nextLine();
 			}
 			
-			h= new Hotel(roomNumber, occupants, stayDuration, roomType, numGuest, floor, price);
+			h= new Hotel(roomNumber, occupants, roomType, stayDuration, numGuest, floor, price);
 			d.ht.insert(h);
 			d.bst.insert(h);
 		}
@@ -63,8 +64,14 @@ public class Database {
 					if(doubleav==0) {
 						System.out.print("Sorry there are no more Double rooms available!");
 					}else {
+						roomnumincrement++;
+						roomNumber = ""+roomnumincrement;
 						System.out.println("There are "+doubleav+" double rooms available");
-						System.out.print("Would you like to make a reservation?:");
+						System.out.print("What is the name for the reservation?: ");
+						occupants = input.nextLine();
+						System.out.print("How long is the stay?: ");
+						stayDuration = input.nextInt();
+						
 					}		
 				}else if(res.equalsIgnoreCase("Standard")) {
 					
