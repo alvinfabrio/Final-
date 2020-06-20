@@ -2,7 +2,7 @@ public class Hotel implements Comparable<Hotel> {
 	private String roomNumber; // unique Key
 	private String occupants; // secondary Key
 	private String roomType;
-	private String stayDuration;
+	private int stayDuration;
 	private int numOfGuests;
 	private int price;
 
@@ -18,10 +18,10 @@ public class Hotel implements Comparable<Hotel> {
 	 * @param price        the price of the room
 	 * 
 	 */
-	public Hotel(String roomNumber, String occupants, String roomType, String stayDuration, int numOfGuests,
+	public Hotel(String roomNumber, String occupants, String roomType, int stayDuration, int numOfGuests,
 			int price) {
 		this.roomNumber = roomNumber;
-		this.occupants = occupants; //guest name
+		this.occupants = occupants; // guest name
 		this.roomType = roomType;
 		this.stayDuration = stayDuration;
 		this.numOfGuests = numOfGuests;
@@ -60,7 +60,7 @@ public class Hotel implements Comparable<Hotel> {
 	 * 
 	 * @return the staying duration
 	 */
-	public String getStayDuration() {
+	public int getStayDuration() {
 		return stayDuration;
 	}
 
@@ -114,7 +114,7 @@ public class Hotel implements Comparable<Hotel> {
 	 * 
 	 * @param stayDuration the Occupant's staying duration
 	 */
-	public void setStayDuration(String stayDuration) {
+	public void setStayDuration(int stayDuration) {
 		this.stayDuration = stayDuration;
 	}
 
@@ -143,8 +143,8 @@ public class Hotel implements Comparable<Hotel> {
 	 */
 	@Override
 	public String toString() {
-		String result = "Room Number: " + roomNumber + "\nOccupant: " + occupants + "\nRoom Type: " + roomType
-				+ "\nDuration of Stay: " + stayDuration + " Days";
+		String result = "Room Number: " + roomNumber + "\nOccupant: " + occupants + "\nDuration of Stay: "
+				+ stayDuration +  " days" + "\nRoom Type: " + roomType + "\nNumber of Guests: " + numOfGuests;
 		return result;
 	}
 
@@ -170,13 +170,10 @@ public class Hotel implements Comparable<Hotel> {
 
 	/**
 	 * Compares two when room number objects to determine ordering Returns 0 if the
-	 * two items are equal 
-	 * Return -1 if this Hotel's room number comes before the
-	 * other Hotel's room number. 
-	 * Returns 1 if the other Hotel's room number comes before
-	 * this Hotel's room number 
-	 * If the two Hotel's room numbers are the same, will
-	 * differentiate by occupants (alphabetical comparison)
+	 * two items are equal Return -1 if this Hotel's room number comes before the
+	 * other Hotel's room number. Returns 1 if the other Hotel's room number comes
+	 * before this Hotel's room number If the two Hotel's room numbers are the same,
+	 * will differentiate by occupants (alphabetical comparison)
 	 * 
 	 * @param the other Hotel object to compare to this
 	 * @return 0 (same room), -1 (this room ordered first) or 1 (the other room
