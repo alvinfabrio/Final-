@@ -1,21 +1,21 @@
 1
 Charles Young
-5
 Suite
+5
 1
 250
 
 3
 Tae-yang Lee
-10
 Queen
+10
 2
 90
 
 5
 Richie Knox
-10
 King
+10
 2
 120
 
@@ -147,133 +147,133 @@ Standard
 
 39
 Owen Swan
-9
 Double
+9
 2
 50
 
 37
 Warren Holden
-4
 King
+4
 1
 120
 
 35
 Harris Davey
-3
 Queen
+3
 2
 90
 
 33
 Yousuf Furqan
-5
 Standard
+5
 1
 30
 
 31
 Charlie Hunter
-7
 Double
+7
 2
 50
 
 29
 Grace Kaur
-2
 King
+2
 2
 120
 
 27
 Siana Viola
-6
 Standard
+6
 1
 30
 
 25
 Raul Garza
-12
 Queen
+12
 2
 90
 
 23
 Rafael Benson
-4
 King
+4
 1
 120
 
 21
 Guy Tyson
-3
 Standard
+3
 1
 30
 
 19
 Aiden Huff
-4
 King
+4
 1
 120
 
 17
 John Doe
-5
 King
+5
 1
 120
 
 15
 Jamie-Leigh Soto
-6
 Queen
+6
 2
 90
 
 13
 Adrien Farrow
-4
 Queen
+4
 1
 90
 
 11
 Chase Tapia
-9
 Standard
+9
 1
 30
 
 8
 Zhihao Wei
-14
 Double
+14
 2
 50
 
 6
 Gray Kim
-4
 Standard
+4
 1
 30
 
 4
 Amrit Hutton
-10
 Standard
+10
 1
 30
 
 2
 Martin Mahoney
-3
 Suite
+3
 2
 250
