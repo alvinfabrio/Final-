@@ -1,12 +1,11 @@
-
 public class Hotel implements Comparable<Hotel> {
 	private String roomNumber; // unique Key
 	private String occupants; // secondary Key
 	private String roomType;
-	private String stayDuration;
+	private int stayDuration;
 	private int numOfGuests;
 	private int floor;
-	private double price;
+	private int price;
 
 	/**
 	 * Constructor for the Hotel class
@@ -20,8 +19,8 @@ public class Hotel implements Comparable<Hotel> {
 	 * @param price        the price of the room
 	 * 
 	 */
-	public Hotel(String roomNumber, String occupants, String roomType, String stayDuration, int numOfGuests, int floor,
-			double price) {
+	public Hotel(String roomNumber, String occupants, String roomType, int stayDuration, int numOfGuests, int floor,
+			int price) {
 		this.roomNumber = roomNumber;
 		this.occupants = occupants; //guest name
 		this.roomType = roomType;
@@ -63,7 +62,7 @@ public class Hotel implements Comparable<Hotel> {
 	 * 
 	 * @return the staying duration
 	 */
-	public String getStayDuration() {
+	public int getStayDuration() {
 		return stayDuration;
 	}
 
@@ -90,7 +89,7 @@ public class Hotel implements Comparable<Hotel> {
 	 * 
 	 * @return price
 	 */
-	public double getPrice() {
+	public int getPrice() {
 		return price;
 	}
 
@@ -126,7 +125,7 @@ public class Hotel implements Comparable<Hotel> {
 	 * 
 	 * @param stayDuration the Occupant's staying duration
 	 */
-	public void setStayDuration(String stayDuration) {
+	public void setStayDuration(int stayDuration) {
 		this.stayDuration = stayDuration;
 	}
 
@@ -153,7 +152,7 @@ public class Hotel implements Comparable<Hotel> {
 	 * 
 	 * @param price
 	 */
-	public void setPrice(double price) {
+	public void setPrice(int price) {
 		this.price = price;
 	}
 
@@ -232,14 +231,4 @@ public class Hotel implements Comparable<Hotel> {
 	}
 
 }
-	
-	/**@Override
-	public int hashCode() {
-		String key = roomNumber + occupants;
-		int sum = 0;
-		for (int i = 0; i < key.length(); i++) {
-			sum += (int) key.charAt(i);
-		}
-		return sum;
-	}
-	*/
+
