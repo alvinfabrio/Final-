@@ -208,18 +208,28 @@ public class Database {
 				break;
 			}
 		}
-		System.out.print("Would you like all room information to be put into a file?(Y/N)");
+		System.out.print("\nWould you like all room information to be put into a file? (Y/N):");
 		res = input.nextLine();
-		if(res.equalsIgnoreCase("y")) {
-			System.out.print("Please enter the name of the file you want to create: ");
+		if (res.equalsIgnoreCase("y")) {
+			System.out.print("\nPlease enter the name of the file you want to create: ");
 			String filename = input.nextLine();
 			File fileo = new File(filename);
-			
-		}
-		else {
+
+			ObjectOutputStream out;
+			ObjectInputStream in;
+
+			String str = d.ht.toString();
+			try {
+				out = new ObjectOutputStream(new FileOutputStream(fileo));
+				out.writeObject(str);
+			} catch (Exception e) {
+				System.out.printf("\nCannot Serialize");
+			}
+		} else {
 			System.out.print("GoodBye!");
 		}
 		
 		
 	}
 }
+
