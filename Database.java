@@ -50,14 +50,14 @@ public class Database {
 			System.out.println("Please select from one of the following options: \n");
 
 			System.out.println(
-					"A. Make a Reservation\nD. Display all Rooms\nR. Check out\nS. Search for a Room\nX. Exit\n");
+					"\nA. Make a Reservation\nD. Display all Rooms\nR. Check out\nS. Search for a Room\nX. Exit\n");
 			System.out.print("Enter your choice: ");
 			res = input.nextLine();
 			if(res.equalsIgnoreCase("A")) {
 				System.out.println("Here are the types of rooms we have: \n1.Double($50 per night)\n2.Standard($30 per night)\n3.Queen($90 per night)\n4.King($120 per night)\n5.Suite($250 per night)");
 				System.out.print("Please enter what type of room you want: ");
 				res=input.nextLine();
-				if(res.equalsIgnoreCase("Double")) {
+				if(res.equalsIgnoreCase("1")) {
 					if(doubleav==0) {
 						System.out.print("Sorry there are no more Double rooms available!");
 					}else {
@@ -67,15 +67,17 @@ public class Database {
 						System.out.println("There are "+doubleav+" double rooms available");
 						System.out.print("What is the name for the reservation?: ");
 						occupants = input.nextLine();
-						System.out.print("How long is the stay?: ");
+						System.out.print("How many nights will you be staying?: ");
 						stayDuration=input.nextLine();
 						System.out.print("How many people will be staying in this room?: ");
 						numGuest = input.nextInt();
+						input.nextLine();
+						System.out.println("Thank You!, We hope you enjoy your stay!");
 						d.ht.insert(new Hotel(roomNumber, occupants, "Double", stayDuration, numGuest, price));
 						d.bst.insert(new Hotel(roomNumber, occupants, "Double", stayDuration, numGuest, price));
 						doubleav--;
 					}		
-				}else if(res.equalsIgnoreCase("Standard")) {
+				}else if(res.equalsIgnoreCase("2")) {
 					if(standardav==0) {
 						System.out.print("Sorry there are no more Standard rooms available!");
 					}else {
@@ -85,16 +87,18 @@ public class Database {
 					System.out.println("There are "+standardav+" standard rooms available");
 					System.out.print("What is the name for the reservation?: ");
 					occupants = input.nextLine();
-					System.out.print("How long is the stay?: ");
+					System.out.print("How many nights will you be staying?: ");
 					stayDuration=input.nextLine();
 					System.out.print("How many people will be staying in this room?: ");
 					numGuest = input.nextInt();
+					input.nextLine();
+					System.out.println("Thank You!, We hope you enjoy your stay!");
 					d.ht.insert(new Hotel(roomNumber, occupants, "Standard", stayDuration, numGuest, price));
 					d.bst.insert(new Hotel(roomNumber, occupants, "Standard", stayDuration, numGuest, price));
 					standardav--;
 					}
 					
-				}else if(res.equalsIgnoreCase("Queen")) {
+				}else if(res.equalsIgnoreCase("3")) {
 					if(queenav==0) {
 						System.out.print("Sorry there are no more Queen rooms available!");
 					}else {
@@ -104,16 +108,18 @@ public class Database {
 					System.out.println("There are "+queenav+" queen rooms available");
 					System.out.print("What is the name for the reservation?: ");
 					occupants = input.nextLine();
-					System.out.print("How long is the stay?: ");
+					System.out.print("How many nights will you be staying?: ");
 					stayDuration=input.nextLine();
 					System.out.print("How many people will be staying in this room?: ");
 					numGuest = input.nextInt();
+					input.nextLine();
+					System.out.println("Thank You!, We hope you enjoy your stay!");
 					d.ht.insert(new Hotel(roomNumber, occupants, "Queen", stayDuration, numGuest, price));
 					d.bst.insert(new Hotel(roomNumber, occupants, "Queen", stayDuration, numGuest, price));
 					queenav--;
 					}
 					
-				}else if(res.equalsIgnoreCase("King")) {
+				}else if(res.equalsIgnoreCase("4")) {
 					if(kingav==0) {
 						System.out.print("Sorry there are no more King rooms available!");
 					}else {
@@ -123,16 +129,18 @@ public class Database {
 					System.out.println("There are "+kingav+" King rooms available");
 					System.out.print("What is the name for the reservation?: ");
 					occupants = input.nextLine();
-					System.out.print("How long is the stay?: ");
+					System.out.print("How many nights will you be staying?: ");
 					stayDuration=input.nextLine();
 					System.out.print("How many people will be staying in this room?: ");
 					numGuest = input.nextInt();
+					input.nextLine();
+					System.out.println("Thank You!, We hope you enjoy your stay!");
 					d.ht.insert(new Hotel(roomNumber, occupants, "King", stayDuration, numGuest, price));
 					d.bst.insert(new Hotel(roomNumber, occupants, "King", stayDuration, numGuest, price));
 					kingav--;
 					}
 					
-				}else if(res.equalsIgnoreCase("Suite")) {
+				}else if(res.equalsIgnoreCase("5")) {
 					if(suiteav==0) {
 						System.out.print("Sorry there are no more Suite rooms available!");
 					}else {
@@ -142,18 +150,17 @@ public class Database {
 					System.out.println("There are "+suiteav+" Suite rooms available");
 					System.out.print("What is the name for the reservation?: ");
 					occupants = input.nextLine();
-					System.out.print("How long is the stay?: ");
+					System.out.print("How many nights will you be staying?: ");
 					stayDuration=input.nextLine();
 					System.out.print("How many people will be staying in this room?: ");
 					numGuest = input.nextInt();
+					input.nextLine();
+					System.out.println("Thank You!, We hope you enjoy your stay!");
 					d.ht.insert(new Hotel(roomNumber, occupants, "Suite", stayDuration, numGuest, price));
 					d.bst.insert(new Hotel(roomNumber, occupants, "Suite", stayDuration, numGuest, price));
 					suiteav--;
 					}
 				}
-				
-				
-				
 			}
 			else if (res.equalsIgnoreCase("D")) {
 				System.out.print("Please select the number on how the data should be displayed:"
@@ -189,6 +196,9 @@ public class Database {
 
 			}
 			else if(res.equalsIgnoreCase("R")) {
+				System.out.print("What roomnumber is being checked out of?: ");
+				
+				
 				
 			}
 			else if(res.equalsIgnoreCase("S")) {
