@@ -3,14 +3,12 @@ Charles Young
 5
 Suite
 1
-1
 250
 
 3
 Tae-yang Lee
 10
 Queen
-2
 2
 90
 
@@ -19,7 +17,6 @@ Richie Knox
 10
 King
 2
-1
 120
 
 7
@@ -27,7 +24,6 @@ Raees Khan
 Double
 3
 2
-1
 50
 
 9
@@ -35,14 +31,12 @@ Simon Yang
 Standard
 20
 1
-2
 30
 
 10
 Keanu Thompson
 Suite
 10
-4
 4
 250
 
@@ -51,7 +45,6 @@ Harrison Barrow
 Queen
 8
 2
-3
 90
 
 14
@@ -59,7 +52,6 @@ Chanelle Cervantes
 Double
 6
 2
-3
 90
 
 16
@@ -67,14 +59,12 @@ Andrew Barnes
 Standard
 10
 1
-4
 30
 
 18
 Whitney Proctor
 Suite
 2
-1
 1
 250
 
@@ -83,7 +73,6 @@ Devon Carroll
 Double
 7
 2
-3
 50
 
 22
@@ -91,7 +80,6 @@ Ayesha Syed
 Queen
 3
 1
-4
 90
 
 24
@@ -99,7 +87,6 @@ Vladimir Roche
 Suite
 1
 4
-2
 250
 
 26
@@ -107,7 +94,6 @@ Leona Mitchell
 Standard
 3
 1
-3
 30
 
 28
@@ -115,14 +101,12 @@ Kharis Wolf
 Standard
 4
 1
-4
 30
 
 30
 Lydia Blackwell
 Double
 3
-2
 2
 50
 
@@ -131,7 +115,6 @@ Xinfang Lei
 Queen
 6
 2
-3
 90
 
 34
@@ -139,7 +122,6 @@ Hardeep Singh
 King
 11
 2
-1
 120
 
 36
@@ -147,7 +129,6 @@ Thanh Nguyen
 Double
 3
 2
-3
 50
 
 38
@@ -155,7 +136,6 @@ Lily Mai
 Double
 6
 1
-2
 50
 
 40
@@ -163,7 +143,6 @@ John Doe
 Standard
 8
 1
-2
 30
 
 39
@@ -171,14 +150,12 @@ Owen Swan
 9
 Double
 2
-4
 50
 
 37
 Warren Holden
 4
 King
-1
 1
 120
 
@@ -187,14 +164,12 @@ Harris Davey
 3
 Queen
 2
-2
 90
 
 33
 Yousuf Furqan
 5
 Standard
-1
 1
 30
 
@@ -203,7 +178,6 @@ Charlie Hunter
 7
 Double
 2
-3
 50
 
 29
@@ -211,7 +185,6 @@ Grace Kaur
 2
 King
 2
-4
 120
 
 27
@@ -219,7 +192,6 @@ Siana Viola
 6
 Standard
 1
-2
 30
 
 25
@@ -227,7 +199,6 @@ Raul Garza
 12
 Queen
 2
-3
 90
 
 23
@@ -235,14 +206,12 @@ Rafael Benson
 4
 King
 1
-4
 120
 
 21
 Guy Tyson
 3
 Standard
-1
 1
 30
 
@@ -251,7 +220,6 @@ Aiden Huff
 4
 King
 1
-2
 120
 
 17
@@ -259,7 +227,6 @@ John Doe
 5
 King
 1
-3
 120
 
 15
@@ -267,7 +234,6 @@ Jamie-Leigh Soto
 6
 Queen
 2
-3
 90
 
 13
@@ -275,7 +241,6 @@ Adrien Farrow
 4
 Queen
 1
-3
 90
 
 11
@@ -283,7 +248,6 @@ Chase Tapia
 9
 Standard
 1
-2
 30
 
 8
@@ -291,7 +255,6 @@ Zhihao Wei
 14
 Double
 2
-1
 50
 
 6
@@ -299,14 +262,12 @@ Gray Kim
 4
 Standard
 1
-3
 30
 
 4
 Amrit Hutton
 10
 Standard
-1
 1
 30
 
@@ -315,5 +276,4 @@ Martin Mahoney
 3
 Suite
 2
-1
 250
