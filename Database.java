@@ -202,7 +202,53 @@ public class Database {
 				
 			}
 			else if(res.equalsIgnoreCase("S")) {
+				System.out.println("\nLet's search for a room!");
+				System.out.println("A. Search by room number.");
+				System.out.println("B. Search by guest name.");
+				System.out.println();
+				System.out.print("How would you like to search: ");
+				String choice = input.nextLine();
 				
+				while (!choice.equalsIgnoreCase("A") && !choice.equalsIgnoreCase("B")) {
+					System.out.println("\nInvalid choice!\n");
+					System.out.println("A. Search by room number.");
+					System.out.println("B. Search by guest name.");
+					System.out.println();
+					System.out.print("How would you like to search: ");
+					choice = input.nextLine();
+				}
+				if (choice.equalsIgnoreCase("A")) {
+					System.out.println("\nSearching by room number!");
+					System.out.println();
+					System.out.print("Room number you are looking for (1 - 80): ");
+					roomNumber = input.nextLine();
+					
+					Hotel temp = new Hotel(roomNumber, null, null, 0, 0, 0, 0);
+					int inTable = d.ht.search(temp);
+					if (inTable != -1) {
+						System.out.println("This room available!");
+						
+					}
+					else {
+						System.out.println("This room is not available!");
+					}
+					
+				}
+				else if (choice.equalsIgnoreCase("B")) {
+					System.out.println("Searching by occupant's name!");
+					System.out.println();
+					System.out.print("Name of the occupant: ");
+					occupants = input.nextLine();
+					
+					Hotel temp = new Hotel(null, null, occupants, 0, 0, 0, 0);
+					int inTable = d.ht.search(temp);
+					
+					if (inTable != -1) {
+						System.out.println("This room is occupied by " + occupants + "!");
+					}
+					else {
+						System.out.println("There is no room occupied by " + occupants + "!");
+					}
 			}
 			else if(res.equalsIgnoreCase("X")) {
 				break;
