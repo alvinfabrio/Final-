@@ -413,7 +413,6 @@ public class Database {
 					}
 				}
 			} 
-			
 			else if (res.equalsIgnoreCase("S")) {
 				System.out.println("\nHow would you like to search for a room?:\n");
 				System.out.println("A. Search by room number");
