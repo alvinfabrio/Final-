@@ -1,0 +1,279 @@
+01
+Charles Young
+Suite
+5
+1
+250
+
+03
+Tae-yang Lee
+Queen
+10
+2
+90
+
+05
+Richie Knox
+King
+10
+2
+120
+
+07
+Raees Khan
+Double
+3
+2
+50
+
+09
+Simon Yang
+Standard
+20
+1
+30
+
+10
+Keanu Thompson
+Suite
+10
+4
+250
+
+12
+Harrison Barrow
+Queen
+8
+2
+90
+
+14
+Chanelle Cervantes
+Double
+6
+2
+90
+
+16
+Andrew Barnes
+Standard
+10
+1
+30
+
+18
+Whitney Proctor
+Suite
+2
+1
+250
+
+20
+Devon Carroll
+Double
+7
+2
+50
+
+22
+Ayesha Syed
+Queen
+3
+1
+90
+
+24
+Vladimir Roche
+Suite
+1
+4
+250
+
+26
+Leona Mitchell
+Standard
+3
+1
+30
+
+28
+Kharis Wolf
+Standard
+4
+1
+30
+
+30
+Lydia Blackwell
+Double
+3
+2
+50
+
+32
+Xinfang Lei
+Queen
+6
+2
+90
+
+34
+Hardeep Singh
+King
+11
+2
+120
+
+36
+Thanh Nguyen
+Double
+3
+2
+50
+
+38
+Lily Mai
+Double
+6
+1
+50
+
+40
+John Doe
+Standard
+8
+1
+30
+
+39
+Owen Swan
+Double
+9
+2
+50
+
+37
+Warren Holden
+King
+4
+1
+120
+
+35
+Harris Davey
+Queen
+3
+2
+90
+
+33
+Yousuf Furqan
+Standard
+5
+1
+30
+
+31
+Charlie Hunter
+Double
+7
+2
+50
+
+29
+Grace Kaur
+King
+2
+2
+120
+
+27
+Siana Viola
+Standard
+6
+1
+30
+
+25
+Raul Garza
+Queen
+12
+2
+90
+
+23
+Rafael Benson
+King
+4
+1
+120
+
+21
+Guy Tyson
+Standard
+3
+1
+30
+
+19
+Aiden Huff
+King
+4
+1
+120
+
+17
+John Doe
+King
+5
+1
+120
+
+15
+Jamie-Leigh Soto
+Queen
+6
+2
+90
+
+13
+Adrien Farrow
+Queen
+4
+1
+90
+
+11
+Chase Tapia
+Standard
+9
+1
+30
+
+08
+Zhihao Wei
+Double
+14
+2
+50
+
+06
+Gray Kim
+Standard
+4
+1
+30
+
+04
+Amrit Hutton
+Standard
+10
+1
+30
+
+02
+Martin Mahoney
+Suite
+3
+2
+250
