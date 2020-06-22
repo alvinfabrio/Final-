@@ -132,7 +132,7 @@ public class Database {
 						}
 						while(b);
 						input.nextLine();
-						System.out.println("\nThank You!, We hope you enjoy your stay in room "+roomNumber+"!\n");
+						System.out.println("\nThank You! We hope you enjoy your stay in room "+roomNumber+"!\n");
 						d.ht.insert(new Hotel(roomNumber, occupants, "Double", stayDuration, numGuest, price));
 						d.bst.insert(new Hotel(roomNumber, occupants, "Double", stayDuration, numGuest, price));
 						d.bst2.insert(new Hotel2(roomNumber, occupants, "Double", stayDuration, numGuest, price));
