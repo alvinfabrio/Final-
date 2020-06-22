@@ -91,13 +91,13 @@ public class Database {
 				}
 				if (res.equalsIgnoreCase("1")) {
 					if (doubleav == 0) {
-						System.out.print("Sorry there are no more Double rooms available!");
+						System.out.print("\nSorry there are no more Double rooms available!");
 					}
 					else {
 						roomnumincrement++;
 						roomNumber = "" + roomnumincrement;
 						price = doubleprice;
-						System.out.println("There are " + doubleav + " double rooms available");
+						System.out.println("\nThere are " + doubleav + " double rooms available");
 						System.out.print("What is the name for the reservation?: ");
 						occupants = input.nextLine();
 						
@@ -141,13 +141,13 @@ public class Database {
 					}
 				} else if (res.equalsIgnoreCase("2")) {
 					if (standardav == 0) {
-						System.out.print("Sorry there are no more Standard rooms available!");
+						System.out.print("Sorry there are no more Standard rooms available!\n");
 					} 
 					else {
 						roomnumincrement++;
 						roomNumber = "" + roomnumincrement;
 						price = standardprice;
-						System.out.println("There are " + standardav + " standard rooms available");
+						System.out.println("\nThere are " + standardav + " standard rooms available");
 						System.out.print("What is the name for the reservation?: ");
 						occupants = input.nextLine();
 						
@@ -192,13 +192,13 @@ public class Database {
 
 				} else if (res.equalsIgnoreCase("3")) {
 					if (queenav == 0) {
-						System.out.print("Sorry there are no more Queen rooms available!");
+						System.out.print("\nSorry there are no more Queen rooms available!");
 					} 
 					else {
 						roomnumincrement++;
 						roomNumber = "" + roomnumincrement;
 						price = queenprice;
-						System.out.println("There are " + queenav + " queen rooms available");
+						System.out.println("\nThere are " + queenav + " queen rooms available");
 						System.out.print("What is the name for the reservation?: ");
 						occupants = input.nextLine();
 						
@@ -243,13 +243,13 @@ public class Database {
 
 				} else if (res.equalsIgnoreCase("4")) {
 					if (kingav == 0) {
-						System.out.print("Sorry there are no more King rooms available!");
+						System.out.print("\nSorry there are no more King rooms available!");
 					} 
 					else {
 						roomnumincrement++;
 						roomNumber = "" + roomnumincrement;
 						price = kingprice;
-						System.out.println("There are " + kingav + " King rooms available");
+						System.out.println("\nThere are " + kingav + " King rooms available");
 						System.out.print("What is the name for the reservation?: ");
 						occupants = input.nextLine();
 						
@@ -295,13 +295,13 @@ public class Database {
 				} 
 				else if (res.equalsIgnoreCase("5")) {
 					if (suiteav == 0) {
-						System.out.print("Sorry there are no more Suite rooms available!");
+						System.out.print("\nSorry there are no more Suite rooms available!");
 					} 
 					else {
 						roomnumincrement++;
 						roomNumber = "" + roomnumincrement;
 						price = suiteprice;
-						System.out.println("There are " + suiteav + " Suite rooms available");
+						System.out.println("\nThere are " + suiteav + " Suite rooms available");
 						System.out.print("What is the name for the reservation?: ");
 						occupants = input.nextLine();
 						
@@ -449,7 +449,7 @@ public class Database {
 						else {
 							try {
 		                        if(Integer.parseInt(roomNumber) <= 80) {
-			                        System.out.println("This room is available! Make a reservation now!");
+			                        System.out.println("\nThis room is available! Make a reservation now!");
 			                        break;
 		                        }
 		                        else {
@@ -498,17 +498,15 @@ public class Database {
                 catch (Exception e) {
                     System.out.printf("\nCannot Serialize");
                 }
-                System.out.print("A file named " + fileName + " has been created with all current data");
+                System.out.print("\nA file named " + fileName + " has been created with all current data");
             }	
 			else if (res.equalsIgnoreCase("X")) {
 				break;
 			}
 
 		}
-		System.out.print("\nWould you like all room information to be updated to the current file? (Y/N):");
-		res = input.nextLine();
-		
-		if (res.equalsIgnoreCase("y")) {
+		System.out.print("\nSaving Data...");
+
 			System.out.print("\nPlease enter the name of the file you want to create: ");
 			String filename = input.nextLine();
 			File fileo = new File(filename);
@@ -521,8 +519,8 @@ public class Database {
 			} catch (Exception e) {
 				System.out.printf("\nCannot Serialize");
 			}
-		} 
-		System.out.print("GoodBye!");
+		
+		System.out.print("\nGoodBye!");
 		input.close();
 	}
 }
