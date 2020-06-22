@@ -204,9 +204,24 @@ public class Database {
 					System.out.print(d.ht);
 				}
 
-			} else if (res.equalsIgnoreCase("R")) {
+			} else if(res.equalsIgnoreCase("R")) {
 				System.out.print("What roomnumber is being checked out of?: ");
-
+				roomNumber = input.nextLine();
+				int t = d.ht.search(new Hotel(roomNumber,"","",0,0,0));
+				if(t==-1) {
+					System.out.println("There is no one in checked in that room.\n");
+				}
+				else {
+					d.ht.getBucket(t).placeIterator();
+					for(int i =0; i<d.ht.getBucket(t).getLength();i++) {
+						if(d.ht.getBucket(t).getIterator().getRoomNumber()!=roomNumber) {
+							d.ht.getBucket(t).advanceIterator();
+						}
+					}
+					System.out.print("We Hope you enjoyed your stay "+d.ht.getBucket(t).getIterator().getOccupants()+"! The total cost of your stay is $"+(d.ht.getBucket(t).getIterator().getPrice()*d.ht.getBucket(t).getIterator().getNumOfGuests()*d.ht.getBucket(t).getIterator().getStayDuration()));
+					d.ht.remove(new Hotel(roomNumber,"","",0,0,0));
+					d.bst.remove(new Hotel(roomNumber,"","",0,0,0));
+				}
 			} else if (res.equalsIgnoreCase("S")) {
 				System.out.println("\nLet's search for a room!");
 				System.out.println("A. Search by room number.");
