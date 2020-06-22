@@ -244,7 +244,7 @@ public class Database {
 					System.out.print("Room number you are looking for (1 - 80): ");
 					roomNumber = input.nextLine();
 
-					Hotel temp = new Hotel(roomNumber, null, null, 0, 0, 0, 0);
+					Hotel temp = new Hotel(roomNumber, "", "", 0, 0, 0 );
 					int inTable = d.ht.search(temp);
 					if (inTable != -1) {
 						System.out.println("This room available!");
@@ -259,7 +259,7 @@ public class Database {
 					System.out.print("Name of the occupant: ");
 					occupants = input.nextLine();
 
-					Hotel temp = new Hotel(null, null, occupants, 0, 0, 0, 0);
+					Hotel temp = new Hotel("", occupants, "", 0, 0, 0 );
 					int inTable = d.ht.search(temp);
 
 					if (inTable != -1) {
