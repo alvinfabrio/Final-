@@ -202,7 +202,7 @@ public class Database {
 					System.out.println();
 					System.out.println("Displaying Hotel Data: ");
 					System.out.println();
-					d.bst.preOrderPrint();
+					d.bst.inOrderPrint();
 				} else if (res.equalsIgnoreCase("B")) {
 					System.out.println();
 					System.out.println("Displaying Hotel Data: ");
