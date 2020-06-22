@@ -202,7 +202,7 @@ public class Database {
 					System.out.println();
 					System.out.println("Displaying Hotel Data: ");
 					System.out.println();
-					d.bst.preOrderPrint();
+					d.bst.inOrderPrint();
 				} else if (res.equalsIgnoreCase("B")) {
 					System.out.println();
 					System.out.println("Displaying Hotel Data: ");
@@ -254,21 +254,27 @@ public class Database {
 				if (choice.equalsIgnoreCase("A")) {
 					System.out.println("\nSearching by room number!");
 					System.out.println();
-					System.out.print("Room number you are looking for (1 - 80): ");
+					while(true) {
+					System.out.print("Room number you are looking for (01 - 80)[Double Digits Only!]: ");
 					roomNumber = input.nextLine();
-
 					Hotel temp = new Hotel(roomNumber, "", "", 0, 0, 0 );
 					int inTable = d.ht.search(temp);
 					if (inTable != -1) {
 						System.out.println("Room "+roomNumber+" is occupied by "+d.ht.getBucket(inTable).getIterator().getOccupants());
+						break;
 
-					} else {
+					}else if(roomNumber.length()<2) {
+						System.out.println("Invalid room number, must be double digits");
+					}
+					else {
 						if(Integer.parseInt(roomNumber)<=80) {
 						System.out.println("This room is available!");
+						break;
 						}
 						else {
 						System.out.println("There is no room with that room number!");
 						}
+					}
 					}
 
 				} else if (choice.equalsIgnoreCase("B")) {
