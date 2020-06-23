@@ -14,7 +14,6 @@ public class Hotel implements Comparable<Hotel> {
 	 * @param roomType     the room type
 	 * @param stayDuration the staying duration of the occupant
 	 * @param numOfGuests  the number of guests
-	 * @param floor        the floor number of the room
 	 * @param price        the price of the room
 	 * 
 	 */
