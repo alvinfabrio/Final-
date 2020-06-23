@@ -1,3 +1,17 @@
+/**
+ * Database.java
+ * 
+ * @author Rida Abdulwasay – Pro Team Coordinator
+ * @author Ameya Dighe – Screen Output Expert
+ * @author Alvin Fabrio – Hash Table Whiz
+ * @author Daozhen (Leslie) Liu – BST Algorithms Specialist
+ * @author Samantha Tancio – Presentation Guru
+ * @author Vinh Vu – File I/O Ace
+ * 
+ * CIS 22C Project
+ * 
+ */
+
 import java.util.InputMismatchException;
 import java.util.Scanner;
 import java.io.*;
