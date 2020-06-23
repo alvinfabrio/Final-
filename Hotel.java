@@ -1,3 +1,17 @@
+/**
+ * Hotel.java
+ * 
+ * @author Rida Abdulwasay – Pro Team Coordinator
+ * @author Ameya Dighe – Screen Output Expert
+ * @author Alvin Fabrio – Hash Table Whiz
+ * @author Daozhen (Leslie) Liu – BST Algorithms Specialist
+ * @author Samantha Tancio – Presentation Guru
+ * @author Vinh Vu – File I/O Ace
+ * 
+ * CIS 22C Project
+ * 
+ */
+
 public class Hotel implements Comparable<Hotel> {
 	private String roomNumber; // unique Key
 	private String occupants; // secondary Key
